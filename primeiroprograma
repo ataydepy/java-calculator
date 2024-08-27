@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class PrimeiroPrograma{
+    public static void main(String[]args){
+        int result=0;
+
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Choose a number");
+        int n1 = scanner.nextInt();
+
+        System.out.print("Choose other number");
+        int n2 = scanner.nextInt();
+
+        System.out.print("Choose an operation (+,-,*,/)");
+        String operation = scanner.next();
+
+        
+        if (operation.equals("+")) {
+            result = n1 + n2;
+        } else if (operation.equals("-")) {
+            result = n1 - n2;
+        } else if (operation.equals("*")) {
+            result = n1 * n2;
+        } else if (operation.equals("/")) {
+            if (n2 == 0);{
+                    System.out.println("Invalid operation");
+                    scanner.close();
+                    return;
+                }
+
+            } else {
+                result = n1 / n2;
+        }
+        
+
+        System.out.println("The result was:" + result);
+
+        scanner.close();
+    }
+}

@@ -9,10 +9,10 @@ public class PrimeiroPrograma {
         System.out.print("Choose a number: ");
         double n1 = scanner.nextDouble();
 
-        System.out.print("Choose another number: ");
+        System.out.println("Choose another number: ");
         double n2 = scanner.nextDouble();
 
-        System.out.print("Choose an operation (+,-,*,/): ");
+        System.out.println("Choose an operation (+,-,*,/): ");
         String operation = scanner.next();
 
         if (operation.equals("+")) {
